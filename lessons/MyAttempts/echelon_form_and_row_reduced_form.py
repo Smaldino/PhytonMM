@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 
 # ----------------------------------------------------------------------
-# 1. Symbolic RREF with SymPy (unchanged logic, just comment added)
+# 1. Symbolic RREF with SymPy
 # ----------------------------------------------------------------------
 AS = sym.Matrix([
     				[1, 2, 2, 3, 1, 0, 0],
@@ -16,7 +16,7 @@ print("RREF and pivot columns:", AS_rref)
 
 
 # ----------------------------------------------------------------------
-# 2. Original echelon form function 
+# 2. Original echelon form function
 # ----------------------------------------------------------------------
 def echelon_form(A):
 	"""Original echelon form implementation with clearer variable names."""
@@ -222,7 +222,7 @@ try:
 except FileNotFoundError:
 	print("Image '0002.jpg' not found. Skipping image demo.")
 	
-
+☺
 # Matrix examples
 
 M1 = np.array([
@@ -240,25 +240,6 @@ M3 = np.array([
     [0, 1, 3],
     [0, 0, 0]
     ])
-
-# print("\nMatrix 1:")
-# print(M1)
-# result1, pivots1 = echelon_form(M1)
-# print("\nEchelon form:")
-# print(result1)
-
-# print("\nMatrix 2:")
-# print(M2)
-# result2, pivots2 = echelon_form(M2)
-# print("\nEchelon form:")
-# print(result2)
-
-# print("\nMatrix 3:")
-# print(M3)
-# result3, pivots3 = echelon_form(M3)
-# print("\nEchelon form:")
-# print(result3)
-
 
 # Test verbose function
 print("\n" + "="*50)
