@@ -1,0 +1,37 @@
+**Instructions for Analyzing a Numerical Methods Function**
+
+When provided with a numerical methods function:
+
+1. **Do not output the original code** in any form.
+2. Instead, generate a **comprehensive line-by-line breakdown** of the function, formatted as a markdown-compatible explanation suitable for a Jupyter notebook.
+3. Wrap the entire explanation in collapsible HTML tags as follows:
+   ```html
+   <details>
+   <summary>Algorithm Analysis</summary>
+
+   [Your full analysis here]
+
+   </details>
+   ```
+4. The analysis must include the following clearly labeled sections:
+   - **Purpose of the Algorithm**: Identify the method (e.g., Newton-Raphson, Euler’s method, Bisection) and its goal (e.g., root-finding, ODE integration).
+   - **Mathematical Foundation**: Explain the underlying theory using inline math notation (e.g., `$x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)}$`) and key assumptions.
+   - **Variable Roles**: Describe each variable’s meaning and units (if applicable).
+   - **Convergence and Error Handling**: Discuss stopping criteria, error estimation, tolerance usage, and how convergence is assessed.
+   - **Input/Output Specifications**: Clarify expected input types, shapes, and return values.
+   - **Edge Case Management**: Address how the function behaves with invalid inputs, singularities, non-convergent scenarios, etc.
+   - **Computational Complexity**: Provide time/space complexity (e.g., $O(n)$ per iteration) and scalability notes.
+   - **Practical Usage Examples**: Include 1–2 short, realistic use cases (e.g., “Solving $x^2 - 2 = 0$ to approximate $\sqrt{2}$”).
+   - **Numerical Significance of Key Operations**: Explain critical lines in terms of numerical behavior (e.g., “`x = x - f(x)/df(x)` implements Newton’s update step for quadratic convergence near simple roots”).
+   - **Stability Considerations**: Note potential issues like division by zero, loss of significance, or sensitivity to initial guesses.
+
+5. Use:
+   - Clear section headers (`###`)
+   - Bullet points for lists
+   - Inline LaTeX math (`$...$`) for equations
+   - Pedagogical language accessible to intermediate learners (e.g., students with basic calculus and programming experience)
+   - Technical depth without unnecessary jargon
+
+6. Ensure the output is ready to paste directly into a **markdown cell** of a `.ipynb` file and will render cleanly in Jupyter environments.
+
+---☺

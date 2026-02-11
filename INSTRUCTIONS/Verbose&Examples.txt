@@ -1,0 +1,56 @@
+When provided with a numerical methods function, generate **two distinct Python code blocks**:
+
+---
+
+#### **1. Verbose, Pedagogical Implementation**
+- Transform the original function into a **readable, well-documented version** that:
+  - Uses **descriptive variable names** (e.g., `current_approximation` instead of `x`, `tolerance` instead of `tol`)
+  - Includes **inline comments** explaining the **mathematical meaning** of each operation
+  - Adds **logging or print statements** that show iteration progress and convergence behavior (e.g., residual norm, step size)
+  - Implements **explicit error handling** (e.g., `ValueError` for invalid inputs, `RuntimeWarning` for non-convergence)
+  - **Preserves the exact algorithmic logic**—no changes to the method itself
+  - Is **fully executable** as standalone Python code (include necessary imports like `numpy` if used)
+
+> This block should be ready to run and understand by students learning numerical analysis.
+
+---
+
+#### **2. Application Examples Suite**
+- Provide a **second, independent code block** containing **2–3 concrete usage examples**, structured as follows:
+  - **Example 1: Textbook verification case**  
+    (e.g., solve $x^2 - 4 = 0$; known root at $x=2$)
+  - **Example 2: Real-world application**  
+    (e.g., find equilibrium in a mechanical system, compute interest rate in finance, etc.)
+  - **Example 3: Edge-case stress test**  
+    (e.g., function with flat derivative, discontinuity, or divergent initial guess)
+
+Each example must include:
+  - Clear **input parameters** (function, derivative, initial guess, tolerance, max iterations)
+  - **Expected analytical result** (as a comment)
+  - **Actual computed result** from calling the verbose function
+  - **Error/convergence analysis**, such as:
+    ```python
+    # Approximation error: |x_n - x_true|
+    # Step difference: |x_n - x_{n-1}|
+    ```
+  - **Matplotlib visualizations where helpful** (e.g., plot of function with root marked, convergence history of iterates)
+  - All explanatory text must appear as **Python comments** (single-line `#` or multi-line `"""` docstrings)—**no markdown**
+
+> This block must also be **fully executable** and self-contained (include all imports, function definitions if needed, or assume the verbose function is already defined in the same notebook).
+
+---
+
+### 📌 Output Format
+Return **exactly two code blocks** labeled as follows:
+
+```python
+# === VERBOSE PEDAGOGICAL IMPLEMENTATION ===
+[Your enhanced function here]
+```
+
+```python
+# === APPLICATION EXAMPLES SUITE ===
+[Your examples with comments and visualizations here]
+```
+
+Do **not** include any additional text, explanations, or markdown outside these two code blocks.
